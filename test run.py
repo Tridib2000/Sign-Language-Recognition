@@ -5,15 +5,15 @@ import pandas as pd
 from keras.models import model_from_json
 
 # Load the model's architecture
-with open(r'E:\research paper for finland\model_architecture.json', 'r') as json_file:
+with open(r'E:\...............\model_architecture.json', 'r') as json_file:
     loaded_model_json = json_file.read()
 model = model_from_json(loaded_model_json)
 
 # Load the model's weights
-model.load_weights(r'E:\research paper for finland\model_weights.h5')
+model.load_weights(r'E:\.............\model_weights.h5')
 
 # Load the labels (ensure the labels are correctly formatted in labels.csv)
-labels_csv_path = r'E:\research paper for finland\labels.csv'
+labels_csv_path = r'E:\.................\labels.csv'
 labels_df = pd.read_csv(labels_csv_path, header=None)
 class_labels = labels_df.iloc[:, 0].tolist()
 
