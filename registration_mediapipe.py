@@ -9,10 +9,10 @@ mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(static_image_mode=False, max_num_hands=1, min_detection_confidence=0.5)
 a='fox'
 # Set the directory path to scan images
-image_directory = rf'E:\research paper for finland\data\{a}'
+image_directory = rf'E:\..........\data\{a}'
 
 # Set the directory path to save the CSV file
-output_directory = r'E:\research paper for finland\train'
+output_directory = r'E:\.........\train'
 
 # Create the output directory if it doesn't exist
 os.makedirs(output_directory, exist_ok=True)
